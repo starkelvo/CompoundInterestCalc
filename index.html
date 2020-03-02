@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>COMPOUND INTEREST CALCULATOR</title>
+    <link rel="stylesheet" href="main.css">
+   
+</head>
+<body>
+    <div id="app">
+        <div class="content">
+            <h3>COMPOUND INTEREST CALCULATOR</h3>
+            <hr>
+            <label >Principal:</label>
+            <input type="number" v-model="principal" placeholder="Enter Your Principal"><br>
+            <label  >Rate:</label>
+            <input type="number" placeholder="Enter Your Rate" v-model="rate"><br>
+            <label >Number:</label>
+            <input type="number" placeholder="Number of Compounding " v-model="number"><br>
+            <label >Time:</label>
+            <input type="number" placeholder="Enter Your Duration" v-model="time"><br>
+            <br><br>
+            <div id ="result">Your Compound Interest is # {{result()}}</div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
